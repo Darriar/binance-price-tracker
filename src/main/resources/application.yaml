@@ -1,3 +1,18 @@
 spring:
   application:
     name: binance-price-tracker
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/price_tracker}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+binance:
+  base-url: https://api.binance.com
+  symbol: ${BINANCE_SYMBOL:BNBUSDT}
+  poll-interval: ${BINANCE_POLL_INTERVAL:PT30S}
