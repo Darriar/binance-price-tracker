@@ -1,6 +1,6 @@
 package com.example.binancepricetracker.scheduler;
 
-import com.example.binancepricetracker.client.BinanceApiException;
+import com.example.binancepricetracker.exception.BinanceApiException;
 import com.example.binancepricetracker.client.BinanceAvgPriceDto;
 import com.example.binancepricetracker.client.BinanceClient;
 import com.example.binancepricetracker.entity.PriceRecord;

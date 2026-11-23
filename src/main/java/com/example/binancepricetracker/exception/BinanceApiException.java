@@ -1,4 +1,4 @@
-package com.example.binancepricetracker.client;
+package com.example.binancepricetracker.exception;
 
 import lombok.Getter;
 
